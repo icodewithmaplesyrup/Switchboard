@@ -5,7 +5,7 @@ def route_outbound_to_flip_phone(platform_prefix, chat_id, sender_name, message_
     Fires when okline, whatsmeow, or discli receives an internet message.
     Constructs the exact string to send to your Apple Messages thread.
     """
-    # Example format: {l1} Shigeru (Todai Car Club): hi
+    # Example format: {l1} Guy (Cool Guys Club): hi
     envelope = f"{{{platform_prefix}{chat_id}}} {sender_name}: {message_text}"
     
     # Use AppleScript or shell command to text this envelope to YOUR number
